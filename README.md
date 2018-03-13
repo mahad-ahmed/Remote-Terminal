@@ -3,7 +3,6 @@
 ### Run any command on the server remotely using sockets.
 The server program waits for client(on a network) or local keyboard input.
 #### Supported commands for client are:
-- connect [IP] [PORT]
 - run [EXECUTABLE_FILE]
 - add [n1...n2]
 - sub [n1...n2]
@@ -12,6 +11,11 @@ The server program waits for client(on a network) or local keyboard input.
 - kill [-a -n NAME -p PID]
 - list
 - list [-a]
+- exit
+
+#### Supported local commands for client are:
+- help
+- connect [IP PORT]
 - disconnect
 - exit
 

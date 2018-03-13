@@ -74,6 +74,10 @@ void printHelp() {
     write(STDOUT_FILENO, "kill -n [PROCESS_NAME]\n", 50-27);
     write(STDOUT_FILENO, "kill -P [PROCESS_PID]\n", 49-27);
     write(STDOUT_FILENO, "kill -a\n", 35-27);
+    write(STDOUT_FILENO, "list\n", 5);
+    write(STDOUT_FILENO, "list -a\n", 8);
+    write(STDOUT_FILENO, "disconnect\n", 38-27);
+    write(STDOUT_FILENO, "exit\n", 5);
 }
 
 int main(int argc, char *argv[]) {
